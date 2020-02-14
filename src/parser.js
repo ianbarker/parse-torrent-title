@@ -54,7 +54,7 @@ function cleanTitle(rawTitle) {
     if (cleanedTitle.indexOf(" ") === -1 && cleanedTitle.indexOf(".") !== -1) {
         cleanedTitle = cleanedTitle.replace(/\./g, " ");
     }
-    cleanedTitle = cleanedTitle.replce(/\.$/,'');
+    cleanedTitle = cleanedTitle.replace(/\.$/,'');
 
     cleanedTitle = cleanedTitle.replace(/_/g, " ");
     cleanedTitle = cleanedTitle.replace(/([(_]|- )$/, "").trim();
